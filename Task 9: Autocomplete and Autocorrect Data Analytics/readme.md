@@ -1,7 +1,9 @@
-Autocorrect & Autocomplete System using NLP (Norvig, Bigrams, TextBlob)
+# Autocorrect & Autocomplete System using NLP (Norvig, Bigrams, TextBlob)
 This project implements and evaluates:
 A custom autocorrect system using Peter Norvig’s algorithm and compares it with TextBlob's correction
+
 An autocomplete system using a Bigram Language Model
+
 Full evaluation and visualization of accuracy, word prediction, and text suggestions based on real datasets
 
 ### Database Used
@@ -13,8 +15,11 @@ Full evaluation and visualization of accuracy, word prediction, and text suggest
 
 ### Project Highlights
 Autocorrect (Norvig Algorithm)
+
 Uses edit distance and a known vocabulary (nltk.corpus.words)
+
 Applies word-by-word correction on noisy/misspelled sentences
+
 Calculates word-level accuracy
 
 Output:
@@ -29,7 +34,9 @@ word_accuracy:   66.7%
 
 ### Autocomplete (Bigram Model)
 Tokenizes and builds bigrams from search query history
+
 Predicts the next word given a prefix
+
 Checks if predicted word is part of actual autocomplete suggestion
 
 # Output:
@@ -45,16 +52,24 @@ match:                    True
 
 ### Evaluation & Visualizations
 Accuracy comparison (Norvig vs TextBlob)
+
 WordCloud of autocomplete tokens
+
 Bar chart of model accuracies
+
 Sample predictions from both tasks
 
 ### Techniques Used
 Text Cleaning & Tokenization
+
 Peter Norvig's Autocorrect Algorithm
+
 TextBlob Correction
+
 Bigram Language Modeling for Autocomplete
+
 Accuracy Metrics
+
 Data Visualization with Matplotlib, WordCloud, Seaborn
 
 ### Installation & Setup
@@ -88,5 +103,7 @@ python autocorrect_autocomplete.py
 
 ### Future Ideas
 Improve autocorrect by training with a domain-specific corpus
+
 Use trigrams or LSTM/transformers for context-aware autocomplete
+
 Build a real-time REST API or chatbot plugin for auto suggestions
