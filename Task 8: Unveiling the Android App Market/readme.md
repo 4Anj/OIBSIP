@@ -29,11 +29,17 @@ Converted data types and dropped irrelevant columns
 ## Key Visualizations
 ### App-Level Insights
 Category distribution: Most popular app categories
+
 Rating distribution: Skewed towards high ratings
+
 Average rating by category: Some niche categories receive better average feedback
+
 App size vs rating: No strong correlation found visually
+
 Free vs Paid Apps: Free apps dominate (majority share)
+
 Top Installed Apps: Lists the 10 most downloaded apps
+
 Top Revenue Paid Apps: Estimated using Price × Installs
 
 ### Review-Level Insights
@@ -59,9 +65,13 @@ fig.show()
 
 ### Insights & Recommendations
 Free Apps Dominate the Play Store (~90% of listings). Monetization strategies should consider in-app ads or purchases.
+
 Top Revenue Apps tend to be niche high-value apps with fewer installs but higher prices.
+
 User Sentiment is mostly positive, which supports the high average ratings.
+
 Category and Size have varying effects on ratings; no strong linear relation.
+
 Most Installed Apps are often free, simple, and serve utility or entertainment purposes.
 
 ### Requirements
