@@ -64,7 +64,7 @@ sns.heatmap(confusion_matrix(y_test, model_preds), annot=True)
 
 Random Forest outperforms others in most metrics, making it a strong baseline.
 
-🔍 Key Insights
+### Key Insights
 Wine quality scores are imbalanced, with most samples clustered between 5 and 6.
 
 Random Forest provides better generalization and handles multiple classes effectively.
