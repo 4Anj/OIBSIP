@@ -114,10 +114,6 @@ Create awareness about sugar consumption and daily recommended limits.
 
 Educate on how to build a balanced meal from your menu.
 
-Leverage Data for Menu Engineering
-
-Use insights to promote high-margin but healthier options.
-
 Reduce or modify underperforming high-calorie items.
 
 ## How to Run the Project
