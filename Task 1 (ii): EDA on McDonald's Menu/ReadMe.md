@@ -3,6 +3,7 @@ This project performs an in-depth nutritional analysis of a fast-food restaurant
 
 ## Dataset
 Filename: menu.csv
+https://www.kaggle.com/datasets/mcdonalds/nutrition-facts
 
 The dataset contains nutritional values of food and beverages served at a restaurant.
 
