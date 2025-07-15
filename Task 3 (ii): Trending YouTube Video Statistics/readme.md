@@ -59,12 +59,6 @@ Most categories are assignable, meaning they can be used when uploading content.
 
 Non-assignable categories might be internal or legacy categories maintained by YouTube.
 
-### Assignable Category Counts (Sample):
-```graphql
-True     XX categories
-False     X categories
-```
-
 ### requirements.txt
 ```nginx
 pandas
