@@ -74,8 +74,7 @@ Useful for: Spotting trends, anomalies (e.g., sudden drops), Evaluating marketin
 5. Correlation Heatmap
 Insight: Reveals how numerical variables relate to each other.
 
-Examples: Strong positive correlation between Quantity Sold and Total Amount (expected)
-Weak correlation between Discount and Total Amount may suggest ineffective discounting strategy
+Examples: Strong positive correlation between Quantity Sold and Total Amount (expected), Weak correlation between Discount and Total Amount may suggest ineffective discounting strategy
 
 ## EDA-Based Actionable Recommendations
 1. Improve Inventory Based on Top Categories
