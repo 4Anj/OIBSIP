@@ -51,12 +51,74 @@ Top 10 high-calorie and low-calorie items
 
 Top 10 high-sugar and low-sugar items
 
-## Sample Visuals
-Nutrient Correlation Heatmap
+## Visualization: Insights through Charts
+### Heatmap – Nutrient Correlation
+Relationships between numerical features (like Calories, Sugars, Total Fat, etc.).
 
-Average Calories per Category
+Insight: Strong positive correlation between Calories and Total Fat, Sugars and Carbohydrates, etc.
 
-Average Sugar per Category
+```python
+sns.heatmap(df.select_dtypes(include='number').corr(), annot=True, cmap='coolwarm')
+```
+
+### Bar Chart – Average Calories per Category
+Which food categories have the highest average calorie count.
+
+Insight: Categories like Breakfast, Desserts, and Burgers have higher average calories.
+
+```python
+df.groupby('Category')['Calories'].mean().sort_values(ascending=False).plot(kind='barh')
+```
+### Bar Chart – Average Sugars per Category
+Categories ranked by their sugar content.
+
+Insight: Beverages and Desserts dominate in sugar content—critical for health-conscious choices.
+
+```python
+df.groupby('Category')['Sugars'].mean().sort_values(ascending=False).plot(kind='barh')
+```
+
+### Top/Bottom Items – Tables
+Top 10 high-calorie and high-sugar items printed for transparency.
+
+High-Calorie Items: Large burgers, shakes, combo meals.
+
+Low-Calorie Items: Salads, apple slices, black coffee.
+
+## Recommendations: Actionable Insights Based on EDA
+Introduce Low-Sugar Options in Beverages
+
+Beverages have extremely high sugar content.
+
+Recommend unsweetened drinks, flavored waters, or diet options.
+
+Reformulate High-Calorie Items
+
+Items in the Breakfast and Burgers category contribute heavily to calories.
+
+Consider smaller portions, lean protein options, or calorie labeling.
+
+Promote Healthy Menu Items
+
+Highlight low-calorie, high-nutrition items (e.g., salads, fruit sides).
+
+Use menu labeling to guide calorie-conscious consumers.
+
+Group Menu by Nutritional Tiers
+
+Add icons or colors to menu items indicating “low-cal”, “low-sugar”, “high-protein” etc.
+
+Run Customer Awareness Campaigns
+
+Create awareness about sugar consumption and daily recommended limits.
+
+Educate on how to build a balanced meal from your menu.
+
+Leverage Data for Menu Engineering
+
+Use insights to promote high-margin but healthier options.
+
+Reduce or modify underperforming high-calorie items.
 
 ## How to Run the Project
 1. Install dependencies
